@@ -2,10 +2,8 @@
  * Pocket service provider
  */
 
-var config = require('../config');
-
 var pocket = {
-    counterUrl: config.protocol + '//widgets.getpocket.com/v1/button?count=horizontal&url={url}',
+    counterUrl: 'https://widgets.getpocket.com/v1/button?count=horizontal&url={url}',
     counter: function(url, factory) {
 
         var request = new XMLHttpRequest();
@@ -22,7 +20,7 @@ var pocket = {
         request.send();
 
     },
-    popupUrl: config.protocol + '//getpocket.com/save?url={url}&format=json&callback=?',
+    popupUrl: 'https://getpocket.com/save?url={url}&format=json&callback=?',
     popupWidth: 600,
     popupHeight: 300
 };
