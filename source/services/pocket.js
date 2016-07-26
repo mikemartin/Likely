@@ -12,7 +12,7 @@ var pocket = {
         request.onload = function() {
             if (this.status >= 200 && this.status < 400) {
                 var data = JSON.parse(this.response);
-                count = data.query.results.html.body.div.a.span.em.content;
+                var count = data.query.results.html.body.div.a.span.em.content;
                 factory(count);
             }
         };
