@@ -15,7 +15,7 @@ var services = {
     pinterest: require('./pinterest'),
     facebook: require('./facebook'),
     twitter: require('./twitter'),
-    gplus: require('./gplus'),
+    google: require('./google'),
     telegram: require('./telegram'),
     linkedin: require('./linkedin'),
     pocket: require('./pocket')
